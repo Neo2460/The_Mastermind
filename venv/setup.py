@@ -14,11 +14,11 @@ setuptools.setup(
     license='BSD',
     keywords='encoding,secret,lists,...',
     packages=setuptools.find_packages(),
-    package_data={'mockingpy': ['default_config.yml']},
+    package_data={'The_Mastermind': ['']},
     classifiers=[
         # Indicate who your project is intended for
-        'Intended Audience :: -II-',
-        'Topic :: Scientific/Engineering :: Astronomy',
+        'Intended Audience :: -',
+        'Topic :: Encrypting :: Decrypting',
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: BSD License',],
     install_requires=requirements,
