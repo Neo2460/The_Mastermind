@@ -8,15 +8,13 @@ The Mastermind
 import tkinter as tk
 
 
-
-
 #Classes
 class Homescreen():
     def __init__(self, fenster, container):
         self.container = container
         self.s1_rahmen = tk.Frame(fenster)
         label = tk.Label(self.s1_rahmen, text='Enter your password:')
-        label.place(x=587, y=200)
+        label.place(x=617, y=220)
         self.s1_rahmen.place(in_=container, x=0, y=0, relwidth=1, relheight=1)
 
         ohne = Intruder_Library(fenster, container)
@@ -25,9 +23,9 @@ class Homescreen():
         b1 = tk.Button(self.s1_rahmen, text="Enter", command=self.password_correct)
         b2 = tk.Button(self.s1_rahmen, text="Continue without password", command=ohne.show)
 
-        b1.place(x=625,y =250)
-        b2.place(x=565,y= 280)
-        self.e1.place(x=565, y=240)
+        b1.place(x=655,y =270)
+        b2.place(x=597,y= 300)
+        self.e1.place(x=613, y=245)
 
     def show(self):
         self.s1_rahmen.lift()
@@ -43,7 +41,7 @@ class Library():
     def __init__(self, fenster, container):
         self.s2_rahmen = tk.Frame(fenster)
         label = tk.Label(self.s2_rahmen, text='Welcome to your library, Neo2460.\nWhich entry do you want to edit?')
-        label.pack(side='top', fill='both', expand='True')
+        label.place(x=600, y=10)
         self.s2_rahmen.place(in_=container, x=0, y=0, relwidth=1, relheight=1)
     def show(self):
         self.s2_rahmen.lift
